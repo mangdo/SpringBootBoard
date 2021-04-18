@@ -29,7 +29,8 @@ public class PostsService {
         Posts posts = postsRepository.findById(id).orElseThrow(()->new IllegalArgumentException("해당사용자가 없습니다. id="+id));
 
         posts.update(requestDto.getTitle(), requestDto.getContent());
-
+        // dirty checking
+        // entity 객체 값만 변경하면 별도로 update 쿼리를 날릴 빌요가 없다.
         return id;
     }
 
@@ -42,9 +43,8 @@ public class PostsService {
     @Transactional(readOnly=true) // 트랜잭션 범위는 유지하되 조회기능만 남겨서 조회속도가 개선
     public List<PostsListResponseDto> findAllDesc(){
         return postsRepository.findAllDesc().stream()
-                .map(PostsListResponseDto::new)
+                .map(posts->new PostsListResponseDto(posts))
                 .collect(Collectors.toList());
-        // (PostListResponseDto::new)는 (post->new PostsListResponseDto(posts))와 동일한 코드
         // postsRepository.findAllDesc()는 List<Posts>를 반환하는데
         // 이를 List<PostListResponseDto>로 바꿔서 반환
     }
