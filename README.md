@@ -35,6 +35,8 @@ http://ec2-13-124-219-138.ap-northeast-2.compute.amazonaws.com:8080/
 
 ## 4. 실행화면
 
+<img src="https://user-images.githubusercontent.com/70243735/115190105-7d6a2380-a122-11eb-9127-83b03b066aa9.gif">
+
 ## 5. 핵심 기능
 
 + #### 게시글의 CRUD   
@@ -49,7 +51,7 @@ http://ec2-13-124-219-138.ap-northeast-2.compute.amazonaws.com:8080/
   <img src = "https://user-images.githubusercontent.com/70243735/115185384-b30b0e80-a11a-11eb-9fdc-93e4612944f7.png">
   
   + **RestApiController**    
-  : 데이터를 반환하는 RestController를 사용하였고, view단의 JQuery의 ajax로 데이터를 주고 받습니다.
+  : 데이터를 반환하는 [RestController](./demo/src/main/java/com/example/demo/web/PostsApiController.java)를 사용하였고, view단의 JQuery의 [ajax](./demo/src/main/resources/static/js/app/index.js)로 데이터를 주고 받습니다.
   
   + **PostsRepository**   
   : JpaRepository를 상속 받아 CRUD 관련 메소드를 제공받습니다.
