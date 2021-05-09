@@ -1,6 +1,6 @@
 # SpringBootBoard
 > SpringBoot Framework를 사용하고 AWS로 배포한 게시판 웹 프로젝트입니다.   
-http://ec2-13-124-219-138.ap-northeast-2.compute.amazonaws.com:8080/
+*~~http://ec2-13-124-219-138.ap-northeast-2.compute.amazonaws.com:8080/~~ (현재는 서버를 내린상태입니다.)*
 
 <br>
 
@@ -26,7 +26,7 @@ http://ec2-13-124-219-138.ap-northeast-2.compute.amazonaws.com:8080/
 #### `test`
 + JUnit
 
-#### `배포`
+#### `deploy`
 + AWS EC2 (Amazon linux 2)
 + AWS RDS (MariaDB)
 
