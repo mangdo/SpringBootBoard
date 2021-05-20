@@ -1,5 +1,6 @@
 # SpringBootBoard
 > SpringBoot Framework를 사용하고 AWS로 배포한 게시판 웹 프로젝트입니다.   
+>  '스프링 부트와 AWS로 혼자 구현하는 웹 서비스'(이동욱 저)를 따라 제작하였습니다.    
 *~~http://ec2-13-124-219-138.ap-northeast-2.compute.amazonaws.com:8080/~~ (현재는 서버를 내린상태입니다.)*
 
 <br>
